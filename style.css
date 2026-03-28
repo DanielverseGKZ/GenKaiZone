@@ -7,6 +7,20 @@ body {
     padding: 0;
 }
 
+/* Header amb logo */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #111111;
+}
+
+header .logo {
+    max-width: 250px;  /* ajusta la mida segons convingui */
+    height: auto;
+}
+
 /* ===== Header ===== */
 header {
     display: flex;
