@@ -1,11 +1,13 @@
+/* ===== Estils generals ===== */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* fons negre */
+    background-color: #1e1e1e; /* gris fosc tipus ChatGPT */
     color: #ffffff; /* text blanc */
     margin: 0;
     padding: 0;
 }
 
+/* ===== Header ===== */
 header {
     display: flex;
     justify-content: center;
@@ -20,11 +22,45 @@ header h1 {
     margin: 0;
 }
 
+/* ===== Hero section / portada ===== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* ocupa gran part de la pantalla */
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2em;
+    color: #ff6600;
+    margin-bottom: 40px;
+}
+
+.game-tab a {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #ff6600;
+    color: #000000;
+    font-size: 1.5em;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.game-tab a:hover {
+    transform: scale(1.05);
+    background-color: #ffaa33;
+}
+
+/* ===== Main general ===== */
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* ===== Build de Genshin ===== */
 .build {
     background: #1a1a1a; /* gris fosc */
     padding: 20px;
@@ -40,9 +76,32 @@ main {
     font-size: 1.2em;
 }
 
+/* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 15px;
     color: #888888;
     font-size: 0.9em;
+}
+
+/* Botó tornar a portada */
+.back-home {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.back-home a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff6600;
+    color: #000000;
+    font-size: 1.2em;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.back-home a:hover {
+    transform: scale(1.05);
+    background-color: #ffaa33;
 }
