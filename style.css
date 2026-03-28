@@ -2,47 +2,33 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #1e1e1e; /* gris fosc tipus ChatGPT */
-    color: #ffffff; /* text blanc */
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-/* Header amb logo */
+/* ===== Header amb logo ===== */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px;           
     background-color: #111111;
 }
 
 header .logo {
-    max-width: 250px;  /* ajusta la mida segons convingui */
+    max-width: 180px;   /* mida ajustada */
     height: auto;
+    margin-bottom: 10px;
 }
 
-/* ===== Header ===== */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #111111; /* header lleugerament diferent */
-}
-
-header h1 {
-    font-size: 3em;
-    color: #ff6600; /* logo taronja */
-    margin: 0;
-}
-
-/* ===== Hero section / portada ===== */
+/* ===== Hero / portada ===== */
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh; /* ocupa gran part de la pantalla */
+    height: 70vh;
     text-align: center;
 }
 
@@ -68,37 +54,7 @@ header h1 {
     background-color: #ffaa33;
 }
 
-/* ===== Main general ===== */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* ===== Build de Genshin ===== */
-.build {
-    background: #1a1a1a; /* gris fosc */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px rgba(255,255,255,0.1);
-    max-width: 600px;
-    text-align: left;
-}
-
-.character {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 15px;
-    color: #888888;
-    font-size: 0.9em;
-}
-
-/* Botó tornar a portada */
+/* ===== Botó tornar a portada ===== */
 .back-home {
     margin-bottom: 20px;
     text-align: center;
@@ -118,4 +74,28 @@ footer {
 .back-home a:hover {
     transform: scale(1.05);
     background-color: #ffaa33;
+}
+
+/* ===== Build de Genshin ===== */
+.build {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(255,255,255,0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.character {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #888888;
+    font-size: 0.9em;
 }
