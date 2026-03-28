@@ -1,101 +1,60 @@
-/* ===== Estils generals ===== */
+/* ===== General ===== */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* gris fosc tipus ChatGPT */
+    background-color: #1e1e1e; /* fons gris fosc uniforme */
     color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-/* ===== Header amb logo ===== */
+/* ===== Logo ===== */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;           
-    background-color: #111111;
+    padding: 15px;
 }
 
 header .logo {
-    max-width: 180px;   /* mida ajustada */
+    max-width: 180px;
     height: auto;
-    margin-bottom: 10px;
 }
 
-/* ===== Hero / portada ===== */
-.hero {
+/* ===== Pestañes de jocs ===== */
+.game-menu {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    text-align: center;
+    margin-top: 100px; /* separació del logo */
+    gap: 30px;
 }
 
-.hero h2 {
-    font-size: 2em;
-    color: #ff6600;
-    margin-bottom: 40px;
-}
-
-.game-tab a {
+.game-tab a, .game-tab span {
     display: inline-block;
-    padding: 20px 50px;
-    background-color: #ff6600;
-    color: #000000;
+    padding: 25px 60px;
     font-size: 1.5em;
+    font-weight: bold;
     border-radius: 15px;
     text-decoration: none;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.game-tab a:hover {
-    transform: scale(1.05);
-    background-color: #ffaa33;
-}
-
-/* ===== Botó tornar a portada ===== */
-.back-home {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.back-home a {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #ff6600;
     color: #000000;
-    font-size: 1.2em;
-    border-radius: 12px;
-    text-decoration: none;
     transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
 }
 
-.back-home a:hover {
+/* Colors de cada pestanya */
+.game-tab.genshin a {
+    background-color: #ffffff;
+}
+
+.game-tab.hsr span {
+    background-color: #c8a2ff; /* purpura clar */
+    color: #000000;
+}
+
+.game-tab.zzz span {
+    background-color: #ff6600; /* taronja */
+    color: #000000;
+}
+
+/* Hover (només per Genshin ja que és clicable) */
+.game-tab.genshin a:hover {
     transform: scale(1.05);
-    background-color: #ffaa33;
-}
-
-/* ===== Build de Genshin ===== */
-.build {
-    background: #1a1a1a;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px rgba(255,255,255,0.1);
-    max-width: 600px;
-    text-align: left;
-}
-
-.character {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 15px;
-    color: #888888;
-    font-size: 0.9em;
+    background-color: #eeeeee;
 }
