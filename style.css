@@ -8,7 +8,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 200px;
+    max-height: 150px;
     object-fit: contain;
     object-position: left;
     z-index: 1000;
