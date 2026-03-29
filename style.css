@@ -5,9 +5,9 @@ body {
 
 .logo {
     position: fixed;
-    top: 0;        /* enganxat a dalt del tot */
-    left: 0;       /* enganxat a l'esquerra del tot */
+    top: 0;
+    left: 0;
     width: 150px;
     height: auto;
-    z-index: 1000; /* assegura que estigui per sobre de tot */
+    z-index: 1000;
 }
