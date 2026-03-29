@@ -1,56 +1,16 @@
-/* ===== General ===== */
+/* Fons general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* fons gris fosc uniforme */
-    color: #ffffff;
     margin: 0;
-    padding: 0;
+    background-color: #1e1e1e; /* gris fosc */
 }
 
-/* ===== Logo ===== */
-header {
-    padding: 15px;
-}
-
-header .logo {
-    max-width: 180px;
+/* Logo fix a dalt esquerra */
+.logo {
+    position: fixed;   /* clau: es queda fix */
+    top: 10px;         /* separació de dalt */
+    left: 10px;        /* separació de l'esquerra */
+    width: 150px;      /* mida del logo */
     height: auto;
-}
-
-/* ===== Pestañes de jocs ===== */
-.game-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px; /* separació del logo */
-    gap: 30px;
-}
-
-.game-tab a, .game-tab span {
-    display: inline-block;
-    padding: 25px 60px;
-    font-size: 1.5em;
-    font-weight: bold;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #000000;
-    transition: transform 0.2s, background-color 0.2s;
-    cursor: pointer;
-}
-
-/* Colors de cada pestanya */
-.game-tab.genshin a {
-    background-color: #ffffff;
-}
-
-.game-tab.hsr span {
-    background-color: #c8a2ff; /* purpura clar */
-    color: #000000;
-}
-
-.game-tab.zzz span {
-    background-color: #ff6600; /* taronja */
-    color: #000000;
 }
 
 /* Hover (només per Genshin ja que és clicable) */
