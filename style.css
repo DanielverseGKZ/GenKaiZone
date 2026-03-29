@@ -1,20 +1,12 @@
-/* Fons general */
 body {
     margin: 0;
-    background-color: #1e1e1e; /* gris fosc */
+    background-color: #1e1e1e;
 }
 
-/* Logo fix a dalt esquerra */
 .logo {
-    position: fixed;   /* clau: es queda fix */
-    top: 10px;         /* separació de dalt */
-    left: 10px;        /* separació de l'esquerra */
-    width: 150px;      /* mida del logo */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 150px;
     height: auto;
-}
-
-/* Hover (només per Genshin ja que és clicable) */
-.game-tab.genshin a:hover {
-    transform: scale(1.05);
-    background-color: #eeeeee;
 }
