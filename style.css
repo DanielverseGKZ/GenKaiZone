@@ -13,3 +13,8 @@ body {
     object-position: left;
     z-index: 1000;
 }
+@media (max-width: 600px) {
+    .logo {
+        max-height: 100px;
+    }
+}
