@@ -15,8 +15,9 @@ body {
 
 .logo {
     max-height: 150px;
+    width: auto;
     object-fit: contain;
-    display: block; /* evita espacios raros */
+    display: block;
 }
 
 @media (max-width: 600px) {
