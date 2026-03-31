@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #1e1e1e;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -17,22 +18,4 @@ body {
     .logo {
         max-height: 100px;
     }
-}
-/* Menú de juegos */
-.game-menu {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 160px; /* Separación debajo del logo principal */
-    gap: 20px; /* Espacio entre botones */
-}
-
-/* Botones de juego */
-.game-button img {
-    max-width: 200px; /* Tamaño máximo del logo */
-    height: auto;
-    transition: transform 0.2s; /* Animación suave al pasar el cursor */
-}
-
-.game-button img:hover {
-    transform: scale(1.05); /* Pequeño efecto hover */
 }
