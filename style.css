@@ -4,26 +4,26 @@ body {
     overflow-x: hidden;
 }
 
+/* Contenidor de logos sense espai */
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 0; /* cap separació entre logos */
+    padding: 0; /* cap espai interior */
+    margin: 0;  /* cap espai exterior */
 }
 
+/* Logos sense marge ni padding */
 .logo {
     max-height: 150px;
     width: auto;
     object-fit: contain;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-    z-index: 1;
-}
-
-.genshin {
-    z-index: 2; /* apareix davant si cal */
-}
-
+/* Responsive per mòbils */
 @media (max-width: 600px) {
     .logo {
         max-height: 100px;
