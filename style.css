@@ -4,21 +4,26 @@ body {
     overflow-x: hidden;
 }
 
-/* Contenidor de logos sense espai */
+/* Contenidor de logos */
 .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 0; /* cap separació entre logos */
-    padding: 0; /* cap espai interior */
-    margin: 0;  /* cap espai exterior */
+    display: flex;       /* fa que els fills s’alineïn horitzontalment */
+    align-items: center; /* alinea verticalment al centre si tenen alçades diferents */
+    padding: 0;
+    margin: 0;
 }
 
-/* Logos sense marge ni padding */
+/* L'enllaç també ha de ser flex perquè les imatges dins seu estiguin a la mateixa línia */
+.logo-container a {
+    display: flex;
+    align-items: center;
+    gap: 0;  /* cap separació entre logos */
+}
+
+/* Logos */
 .logo {
     max-height: 150px;
     width: auto;
     object-fit: contain;
-    display: block;
     margin: 0;
     padding: 0;
 }
